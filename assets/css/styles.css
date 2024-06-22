@@ -5,6 +5,17 @@
     padding: 0;
 }
 
+/*:root {
+    --background-color: #ffffff;
+    --text-color: #353535;
+    --title-color: #000000;
+}
+
+.dark-theme {
+    --background-color: #000000;
+    --text-color: #808080;
+    --title-color: #ffffff;
+}*/
 
 #icon {
     width: 30px;
@@ -25,7 +36,7 @@ html {
 }
 
 .profile {
-    height: 100vh;
+    height: 95vh;
     width: 100%;
     background: #ffffff;
     /*font-family: sans-serif;*/
@@ -128,6 +139,23 @@ nav ul li a:hover {
 
 /* BUTTONS */
 
+.toggle-btn {
+    background: #353535;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.toggle-btn img {
+    width: 25px;
+    margin-left: 10px;
+}
+
 .btn-container {
     display: flex;
     justify-content: left;
@@ -181,7 +209,7 @@ nav ul li a:hover {
 
 /* CONTACT */
 
-.infocontact {
+#infocontact {
     margin-left: 8%;
     margin-top: 0%;
 }
@@ -193,19 +221,16 @@ nav ul li a:hover {
 }
 
 .contact {
-    display: flex;
-    margin-left: 5%;
-    margin-top: 50px;
-    align-items: center;
-    justify-content: center;
+    margin-left: 8%;
+    margin-top: 0%;
     gap: 0.5rem;
-    margin: 1rem;
+    margin: 0.1rem;
 }
 
 .contact a {
     font-size: 20px;
     color: #000000;
-    margin-right: 20px;
+    margin-right: 1%;
 }
 
 .contact a:hover {
