@@ -5,17 +5,21 @@
     padding: 0;
 }
 
-/*:root {
+:root {
     --background-color: #ffffff;
-    --text-color: #353535;
-    --title-color: #000000;
+    --text-color: #000000;
+    --title-color: #353535;
+    --border-color: #000000;
+    /*--footer-color: #808080;*/
 }
 
 .dark-theme {
-    --background-color: #000000;
-    --text-color: #808080;
-    --title-color: #ffffff;
-}*/
+    --background-color: #141414;
+    --text-color: #ffffff;
+    --title-color: #808080;
+    --border-color: #ffffff;
+    /*--footer-color: #bebebe;*/
+}
 
 #icon {
     width: 30px;
@@ -29,7 +33,7 @@ nav ul {
 
 body {
     font-family: "Poppins", sans-serif;
-  }
+}
 
 html {
     scroll-behavior: smooth;
@@ -38,9 +42,10 @@ html {
 .profile {
     height: 95vh;
     width: 100%;
-    background: #ffffff;
+    background: var(--background-color);
     /*font-family: sans-serif;*/
     position: relative;
+    transition: background 0.8s, color 0.8s;
 }
 
 /* DESKTOP NAV */
@@ -67,11 +72,11 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #000000;
+    color: var(--text-color);
 }
 
 nav ul li a:hover {
-    color: #808080;
+    color: var(--title-color);
 }
 
 .nav-links {
@@ -83,6 +88,7 @@ nav ul li a:hover {
 /* LOGO */
 
 .logo {
+    color: var(--text-color);
     font-size: 2rem;
 }
 
@@ -97,19 +103,20 @@ nav ul li a:hover {
 
 .info h1 {
     font-size: 40px;
-    color: #000000;
+    color: var(--text-color);
     margin-bottom: 20px;
 }
 
 .section__text__p1 {
+    color: var(--text-color);
     text-align: left;
   }
 
 .info a {
-    background:#808080;
+    background:var(--title-color);
     padding: 10px 18px;
     text-decoration: none;
-    color: #ffffff;
+    color: var(--background-color);
     display: inline-block;
     margin: 30px 0;
     border-radius: 5px;
@@ -140,8 +147,9 @@ nav ul li a:hover {
 /* BUTTONS */
 
 .toggle-btn {
-    background: #353535;
-    color: #fff;
+    background: var(--text-color);
+    color: var(--background-color);
+    transition: background 0.8s, color 0.8s;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -172,39 +180,33 @@ nav ul li a:hover {
   
 .btn-color-1,
 .btn-color-2 {
-    border: #353535 0.1rem solid;
+    border: var(--border-color) 0.1rem solid;
 }
   
 .btn-color-1:hover,
 .btn-color-2:hover {
   cursor: pointer;
-  }
+}
   
 .btn-color-1,
 .btn-color-2:hover {
-    background: #353535;
-    color: #ffffff;
+    transition: background 0.8s, color 0.8s;
+    background: var(--text-color);
+    color: var(--background-color);
 }
   
 .btn-color-1:hover {
-    background: #000000;
+    background: var(--background-color);
+    color: var(--text-color);
 }
-  
+
 .btn-color-2 {
-    background: none;
+    background: var(--background-color);
+    color: var(--text-color);
 }
   
 .btn-color-2:hover {
-    border: #ffffff 0.1rem solid;
-}
-  
-.btn-container {
-    gap: 1rem
-}
-
-.title {
-    font-size: 2rem;
-    text-align: left;
+    border: var(--background-color) 0.1rem solid;
 }
 
 /* CONTACT */
@@ -216,11 +218,12 @@ nav ul li a:hover {
 
 .infocontact h1 {
     font-size: 30px;
-    color: #000000;
+    color: var(--text-color);
     margin-bottom: 0px;
 }
 
 .contact {
+    color: var(--text-color);
     margin-left: 8%;
     margin-top: 0%;
     gap: 0.5rem;
@@ -229,22 +232,24 @@ nav ul li a:hover {
 
 .contact a {
     font-size: 20px;
-    color: #000000;
+    color: var(--text-color);
     margin-right: 1%;
 }
 
-.contact a:hover {
+/*.contact a:hover {
     color: #353535;
-}
+}*/
 
 /* FOOTER SECTION */
 
 footer {
+    background: var(--background-color);
+    transition: background 0.8s, color 0.8s;
     height: 5vh;
-    margin: 0 1rem;
+    /*margin: 0 1rem;*/
 }
-  
+
 footer p {
     text-align: center;
-    color: #808080;
+    color: var(--title-color);
 }

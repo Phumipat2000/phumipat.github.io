@@ -2,6 +2,8 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>My Portfolio</title>
         <link rel="stylesheet" href="assets/css/styles.css">
         <!--<link rel="stylesheet" href="assets/css/mediaqueries.css">-->
@@ -16,7 +18,7 @@
     <body>
         <div class="profile">
             <nav>
-                <img src="assets/image/logo.png" class="logo" alt="Akira">&nbsp
+                <img src="assets/image/logo.png" alt="Akira">&nbsp
                 &nbsp<div class="logo">Phumipat Seneewong Na Ayudhya</div>
                 <ul>
                     <li><a href="https://www.facebook.com/4dxzgod/" target="_blank" class="m-3">Facebook</a></li>
@@ -25,27 +27,30 @@
                     <li><a href="">Services</a></li>-->
                     <li><a href="mailto:phumipat.se9@gmail.com">Hire Me</a></li>
                 </ul>
-                    <!--<div class="toggle-btn" id="btn">
-                        <span id="btntext">Dark</span>
-                        <img src="assets/image/moon.png" id="btnIcon" 
-                    </div>-->
+                <div class="toggle-btn" id="btn">
+                    <span id="btnText">Dark</span>
+                    <img src="assets/image/moon.png" id="btnIcon">
+                </div>
             </nav>
+
             <div class="info">
                 <p class="section__text__p1">Hello, I'm</p>
                 <h1>Phumipat Seneewong Na Ayudhya</h1>
-                <p class="section__text__p1">This is my official Portfolio website. You can call me Poom.</p>
-                    <p>You can also view my CV by clicking on Download CV.</p>&nbsp
+                <p class="section__text__p1">This is my official Portfolio website. You can call me Poom.
+                <p class="section__text__p1">You can also view my CV by clicking on Download CV.</p>&nbsp
                 <div class="btn-container">
                     <button 
                         class="btn btn-color-2"
                         onclick="window.open('components/cv')">Download CV</button>
-                    <button class="btn btn-color-1"  
+                    <button class="btn btn-color-1"
                         onclick="window.open('components/Certificate.pdf')">Certificate</button>
                 </div>
             </div>
+
             <div class="img-box">
                 <img src="assets/image/profile.jpg" alt="main-img" class="circle" >
             </div>
+            
             <section id="infocontact">
                 <div class="contact">&nbsp
                     <h1>Contact Me</h1>
@@ -55,17 +60,34 @@
                 </div>
             </section>
         </div>
+
         <footer>
             <p>Copyright &#169; 2024 Phumipat Seneewong Na Ayudhya. All Rights Reserved.</p>
-          </footer>
+        </footer>
+        
+        <script>
+        let btn = document.getElementById("btn");
+        let btnText = document.getElementById("btnText");
+        let btnIcon = document.getElementById("btnIcon");
 
-          <!--<script>
-            let btn = document.getElementById("btn");
+        let localS = localStorage.getItem('theme');
 
-            btn.onclick = function() {
-                document.body.classList.toggle("dark-theme")
+        if(!localS == 'dark') {
+            document.documentElement.setAttribute('data-theme', 'dark')
+        }
+
+        btn.onclick = function() {
+            document.body.classList.toggle("dark-theme")
+            
+            if (document.body.classList.contains("dark-theme")){
+                btnIcon.src = "assets/image/sun.png";
+                btnText.innerHTML = "Light"
+            }else{
+                btnIcon.src = "assets/image/moon.png";
+                btnText.innerHTML = "Dark"
             }
-          </script>-->
+        }
+        </script>
 
     </body>
 </html>
