@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/mediaqueries.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+  </head>
+
+  <!-- add icon link -->
+  <link rel="icon" type="image/x-icon" href="assets/image/logo-icon.png">
+
+  <body>
+    <div class="profile">
+        <nav id="desktop-nav">
+            <img src="assets/image/logo.png" alt="Akira">
+            <!--<div class="logo">Phumipat Seneewong Na Ayudhya</div>-->
+            <ul class="nav-links">
+                <li><a href="https://www.facebook.com/4dxzgod/" target="_blank" class="m-3">Facebook</a></li>
+                <li><a href="https://github.com/Phumipat2000" target="_blank" class="m-3">GitHub</a></li>
+                <li><a href="mailto:phumipat.se9@gmail.com">Hire Me</a></li>
+                <!--<div class="toggle-btn" id="btn">
+                  <span id="btnText">Dark</span>
+                  <img src="assets/image/moon.png" id="btnIcon">
+                </div>-->
+            </ul>
+        </nav>
+    </div>
+
+    <nav id="hamburger-nav">
+        <img src="assets/image/logo.png" alt="Akira">
+        <!--<div class="logo">Phumipat Seneewong Na Ayudhya</div>-->
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="https://www.facebook.com/4dxzgod/" target="_blank" class="m-3" onclick="toggleMenu()">Facebook</a></li>
+                <li><a href="https://github.com/Phumipat2000" target="_blank" class="m-3" onclick="toggleMenu()">GitHub</a></li>
+                <li><a href="mailto:phumipat.se9@gmail.com" onclick="toggleMenu()">Hire Me</a></li>
+                <!--<div class="toggle-btn" id="btn">
+                  <span id="btnText">Dark</span>
+                  <img src="assets/image/moon.png" id="btnIcon">
+                </div>-->
+            </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="assets/image/photo-1.jpg" alt="profile picture" class="circle">
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Phumipat Seneewong Na Ayudhya</h1>
+        <p class="section__text__p2">This is my official Portfolio website. You can call me Poom.</p>
+        <p class="section__text__p3">You can also view my CV by clicking on Download CV.</p>
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="window.open('components/cv.html')">
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="window.open('components/Certificate.pdf')">
+            Certificate
+          </button>
+        </div>
+        <!--<div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/'"/>
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/'"/>
+        </div>-->
+      </div>
+    </section>
+
+    <section id="about">
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="assets/image/IMG_25821.JPG"
+            alt="Profile picture"
+            class="about-pic"/>
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <!--<div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"/>
+              <h3>Experience</h3>
+              <p>2+ years <br />Frontend Development</p>
+            </div>-->
+            <div class="details-container">
+              <img
+                src="assets/image/bachelor.png"
+                alt="Education icon"
+                class="icon"/>
+              <h3>Education</h3>
+              <p>CPE Bachelor's Degree<br/>HVC in Computer Technology<br>VC in Computer Technology</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              My name is Phumipat Seneewong Na Ayudhya, you can call me Poom. 
+              I recently graduated with a Bachelor's degree in Computer Engineering from Rajamangala University of Technology Lanna.
+              I developed a foundation in software development, web development, UX/UI design, 
+              network systems, and video editing during my studies.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skill">
+      <h1 class="title">Skill</h1>
+      <div class="skill-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="skill-sub-title"></h2>
+            <div class="article-container">
+
+              <article>
+                <img
+                src="assets/image/html.png"
+                alt="HTML icon"
+                class="icon"/>
+                <div>
+                  <h3>HTML</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                src="assets/image/css-3.png"
+                alt="CSS icon"
+                class="icon"/>
+                <div>
+                  <h3>CSS</h3>
+                  <p>Pre-Intermediate</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                src="assets/image/figma-1.png"
+                alt="Figma icon"
+                class="icon"/>
+                <div>
+                  <h3>Figma</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                src="assets/image/php.png"
+                alt="JavaScript icon"
+                class="icon"/>
+                <div>
+                  <h3>PHP</h3>
+                  <p>Elementary</p>
+                </div>
+              </article>
+              
+              <article>
+                <img
+                src="assets/image/mysql-1.png"
+                alt="MySQL icon"
+                class="icon"/>
+                <div>
+                  <h3>MySQL</h3>
+                  <p>Pre-Intermediate</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                src="assets/image/js.png"
+                alt="PHP icon"
+                class="icon"/>
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Elementary</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          
+          <div class="details-container">
+            <h2 class="skill-sub-title"></h2>
+            <div class="article-container">
+
+              <article>
+                <img
+                  src="assets/image/github-mark.png"
+                  alt="GitHub icon"
+                  class="icon"/>
+                <div>
+                  <h3>GitHub</h3>
+                  <p>Pre-Intermediate</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="assets/image/photoshop-1.png"
+                  alt="Photoshop icon"
+                  class="icon"/>
+                <div>
+                  <h3>Photoshop</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="assets/image/premiere-pro-1.png"
+                  alt="Premiere Pro icon"
+                  class="icon"/>
+                <div>
+                  <h3>PremierePro</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h1 class="title">Contact Me</h1>
+        <div class="contact-info-container">
+          <i class="fa fa-envelope-o" aria-hidden="true"></i>
+          <p><a href="mailto:phumipat.se9@gmail.com">phumipat.se9@gmail.com</a></p>
+          <i class="fa fa-phone" aria-hidden="true"></i>
+          <p><a>084 221 6903</a></p>
+        </div>
+    </section>
+
+    <footer>
+      <p>Copyright &#169; 2024 Phumipat Seneewong Na Ayudhya. All Rights Reserved.</p>
+    </footer>
+
+    <script src="assets/css/script.js"></script>
+
+    <!--<script>
+      let btn = document.getElementById("btn");
+      let btnText = document.getElementById("btnText");
+      let btnIcon = document.getElementById("btnIcon");
+
+      btn.onclick = function() {
+          document.body.classList.toggle("dark-theme")
+          
+          if (document.body.classList.contains("dark-theme")){
+              btnIcon.src = "assets/image/sun.png";
+              btnText.innerHTML = "Light"
+          }else{
+              btnIcon.src = "assets/image/moon.png";
+              btnText.innerHTML = "Dark"
+          }
+      }
+      </script>-->
+
+  </body>
+</html>
