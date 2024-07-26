@@ -11,6 +11,10 @@ body a:visited {
   text-decoration: none;
 }
 
+.info{
+  text-indent: 48px;
+}
+
 .resumeCanvas {
   margin: 0 auto;
   box-sizing: border-box;
